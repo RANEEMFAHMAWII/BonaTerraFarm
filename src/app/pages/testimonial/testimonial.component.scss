@@ -1,0 +1,52 @@
+.vision{
+  padding-top: 4%;
+}
+/* src/app/testimonials-partnerships/testimonials-partnerships.component.css */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #eab317;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial, .partnerships {
+  border: 2px solid #eab317;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  color: #555;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial:hover, .partnerships:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-color: #9d6a32;
+}
+
+.customer-name {
+  margin-top: 10px;
+  font-weight: bold;
+}

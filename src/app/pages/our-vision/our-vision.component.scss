@@ -1,0 +1,55 @@
+.vision{
+    padding-top: 4%;
+  }
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/img/visionBG.jpg'); /* Adjust path to your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Apply blur effect to the background image */
+    
+}
+
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
+// }
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+
+.vision-mission p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+h1 {
+    font-size: 46px;
+    margin: 0;
+    font-weight: bold;
+    color: #9d6a32;
+    font-family: tshgeel-heavy, "Tajawal", sans-serif;
+  }
+.texth2{
+    color: #eab317;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }

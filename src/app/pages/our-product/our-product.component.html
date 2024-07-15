@@ -1,0 +1,27 @@
+<div class="product">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>{{"products" | translate}}</h1>
+                <div class="container textSt">
+
+                    <h6>{{"ourProducts" | translate}}</h6>
+
+                </div>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-item" *ngFor="let product of products">
+                <div *ngIf="product.name=='more'">
+                    <a routerLink="/category"><img [src]="product.image" [alt]="product.name" class="product-image"></a>
+                </div>
+                <div *ngIf="product.name!='more'"> <img [src]="product.image" [alt]="product.name"
+                        class="product-image"></div>
+
+                <div class="product-info">
+                    <h6>{{ product.name | translate}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

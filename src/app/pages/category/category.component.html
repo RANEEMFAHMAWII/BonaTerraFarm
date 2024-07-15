@@ -1,0 +1,41 @@
+<!-- src/app/product-grid/product-grid.component.html -->
+<div class="container">
+  <div class="tabs">
+    <button
+      class="tab-button"
+      [ngClass]="{'active': activeTab === 'fruits'}"
+      (click)="setActiveTab('fruits')">{{"Fruits"|translate}}</button>
+    <button
+      class="tab-button"
+      [ngClass]="{'active': activeTab === 'vegetables'}"
+      (click)="setActiveTab('vegetables')">{{"Vegetables"|translate}}</button>
+  </div>
+
+  <div class="tab-content">
+    <div *ngIf="activeTab === 'fruits'">
+      <h2 class="section-title">{{"Fruits"|translate}}</h2>
+      <div class="grid">
+        <div class="card" *ngFor="let fruit of fruits">
+          <img [src]="fruit.imageUrl" alt="{{fruit.name}}" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">{{fruit.name | translate}}</h3>
+            <p class="card-season">{{fruit.season |translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="activeTab === 'vegetables'">
+      <h2 class="section-title">{{"Vegetables"|translate}}</h2>
+      <div class="grid">
+        <div class="card" *ngFor="let vegetable of vegetables">
+          <img [src]="vegetable.imageUrl" alt="{{vegetable.name}}" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">{{vegetable.name |translate}}</h3>
+            <p class="card-season">{{vegetable.season |translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
