@@ -13,16 +13,16 @@
   margin: 50px 0;
 }
 
-.hr-lines:before, .hr-lines:after {
-  content: " ";
-  height: 2px;
-  width: 6%;
-  background: #eab317;
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+// .hr-lines:before, .hr-lines:after {
+//   content: " ";
+//   height: 2px;
+//   width: 6%;
+//   background: #eab317;
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
 .textSt{
     margin-top: -2%;
 }
@@ -117,7 +117,7 @@ h6{
   margin-bottom: 10px;
   color:#eab317;
   font-weight:200;
-  
+
 }
 
 .abt-text p:last-child {
