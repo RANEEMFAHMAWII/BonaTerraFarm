@@ -11,12 +11,11 @@
     animation-name: fade-out;
     animation-duration: 3s;
     animation-delay: 3s;
-   
     img{
         width: 50%;
         animation-name: fade-in;
         animation-duration: 2.5s;
-    } 
+    }
 }
 #splash::before {
     content: "";

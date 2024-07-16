@@ -10,10 +10,6 @@ export class TestimonialComponent implements OnInit {
 
   constructor(private translate: TranslateService) { }
 
- 
-
-
-
   ngOnInit(): void {
   }
 

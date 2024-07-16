@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     private router: Router,
     private cookieService: CookieService
     ) {
-    this.lang = localStorage.getItem('lang') || 'ar';
+    this.lang = localStorage.getItem('lang') || 'en';
     let html = document.querySelector('html');
     let body = document.querySelector('body');
     this.translate.use(this.lang);
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
     if (isPageReload) {
       setTimeout(()=>{
         this.showSplash=false;
-        this.cookieService.set('firstLoad', 'true');      
+        this.cookieService.set('firstLoad', 'true');
       },5000);
     } else {
       this.showSplash = false;
